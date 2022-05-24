@@ -33,14 +33,36 @@ body {
 	border: none;
 	background-color: transparent;
 }
+.search-field:focus,
+.search-field:focus {
+	outline: none;
+}
 .titles {
 	display: flex;
 	justify-content: space-between;
 	padding: 8px;
+	border-bottom: 1px #afabc6 solid;
+}
+
+.titles h4 {
+	width: 150px;
 }
 
 .bodies {
 	display: flex;
 	justify-content: space-between;
 	padding: 8px;
+	border-bottom: 1px #afabc6 solid;
+	transition: all 0.1s ease-in-out;
+}
+
+.bodies:hover {
+	background-color: #efeff0;
+}
+
+.bodies p {
+	width: 150px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	text-transform: capitalize;
 }
