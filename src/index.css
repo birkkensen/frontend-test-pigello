@@ -1,5 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400;8..144,600&display=swap');
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+}
+body {
+	font-family: 'Roboto Flex', sans-serif;
+}
+
+.container {
+	width: 80vw;
+	margin: 72px auto;
+}
+
+.search-field {
+	width: 100%;
+	padding: 8px 16px;
 }
