@@ -2,12 +2,12 @@ import { useState, useEffect } from 'react';
 import { fetchFromApi } from './api';
 
 function App() {
-	const [bodies, setBodies] = useState();
+	const [data, setData] = useState();
 	useEffect(() => {
-		fetchFromApi().then(setBodies);
+		fetchFromApi().then(setData);
 	}, []);
 
-	console.log(bodies);
+	console.log(data);
 	return <div>Hello world:)</div>;
 }
 
