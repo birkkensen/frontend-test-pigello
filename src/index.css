@@ -6,14 +6,41 @@
 }
 body {
 	font-family: 'Roboto Flex', sans-serif;
+	color: #151f68;
 }
 
 .container {
 	width: 80vw;
 	margin: 72px auto;
+	border: 1px #afabc6 solid;
+	border-radius: 4px;
 }
 
+.search-container {
+	display: flex;
+	align-items: center;
+	/* border-top: 1px #000 solid; */
+	border-bottom: 1px #afabc6 solid;
+	padding: 8px;
+}
+.search-container svg {
+	font-size: 24px;
+}
 .search-field {
 	width: 100%;
-	padding: 8px 16px;
+	margin-left: 4px;
+	padding: 4px 0;
+	border: none;
+	background-color: transparent;
+}
+.titles {
+	display: flex;
+	justify-content: space-between;
+	padding: 8px;
+}
+
+.bodies {
+	display: flex;
+	justify-content: space-between;
+	padding: 8px;
 }
