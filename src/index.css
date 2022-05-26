@@ -13,13 +13,12 @@ body {
 	width: 80vw;
 	margin: 72px auto;
 	border: 1px #afabc6 solid;
-	border-radius: 4px;
+	border-radius: 16px;
 }
 
 .search-container {
 	display: flex;
 	align-items: center;
-	/* border-top: 1px #000 solid; */
 	border-bottom: 1px #afabc6 solid;
 	padding: 8px;
 }
@@ -41,7 +40,6 @@ body {
 	display: flex;
 	justify-content: space-between;
 	padding: 8px;
-	border-bottom: 1px #afabc6 solid;
 }
 
 .titles h4 {
@@ -55,9 +53,17 @@ body {
 	border-bottom: 1px #afabc6 solid;
 	transition: all 0.1s ease-in-out;
 }
+.bodies:first-child {
+	border-top: 1px #afabc6 solid;
+}
+.bodies:last-child {
+	border: none;
+	border-radius: 0 0 16px 16px;
+}
 
 .bodies:hover {
-	background-color: #efeff0;
+	background-color: #f2edd0;
+	cursor: pointer;
 }
 
 .bodies p {
@@ -65,4 +71,8 @@ body {
 	padding-top: 8px;
 	padding-bottom: 8px;
 	text-transform: capitalize;
+}
+
+.show {
+	height: 150px;
 }

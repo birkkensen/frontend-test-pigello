@@ -6,11 +6,9 @@ import { v4 as uuidv4 } from 'uuid';
 function App() {
 	const [data, setData] = useState();
 	const [query, setQuery] = useState('');
-
 	useEffect(() => {
 		fetchFromApi(query).then(setData);
 	}, [query]);
-
 	return (
 		<section className='container'>
 			<div className='search-container'>
@@ -31,7 +29,7 @@ function App() {
 				{data &&
 					data.bodies?.map((bodie) => {
 						return (
-							<div key={uuidv4()} onClick={() => console.log('Click')} className='bodies'>
+							<div key={uuidv4()} className={`bodies`}>
 								<p className='bodie'>{bodie.englishName}</p>
 								<p className='bodie'>
 									{bodie.aroundPlanet?.planet ? bodie.aroundPlanet?.planet : 'No Planet Data'}
