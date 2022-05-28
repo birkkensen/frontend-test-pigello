@@ -7,14 +7,14 @@ const Home = () => {
 		bodies: [],
 	});
 	const [query, setQuery] = useState('');
-
 	useEffect(() => {
 		fetchFromApi(query).then(setData);
 	}, [query]);
+
+	// TODO: Maybe make this return into a Bodies component??
 	return (
 		<>
-			<h1 className='page-title'>Bodies of our Solar system</h1>
-			<section className='container'>
+			<section className='bodies-container'>
 				<Searchbar query={query} setQuery={setQuery} />
 				<div className='titles'>
 					<h4>Name</h4>

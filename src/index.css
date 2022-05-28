@@ -14,22 +14,21 @@ body {
 	font-family: 'Roboto Flex', sans-serif;
 	color: var(--font-color);
 }
-.page-title {
+
+.page-wrapper {
 	width: 80vw;
 	margin: auto;
 }
-
-.container {
-	width: 80vw;
-	margin: 24px auto;
-	border: 1px var(--border-color) solid;
-	border-radius: 16px;
-}
 @media screen and (max-width: 480px) {
-	.container {
+	.page-wrapper {
 		width: auto;
 		margin: 20px;
 	}
+}
+
+.bodies-container {
+	border: 1px var(--border-color) solid;
+	border-radius: 16px;
 }
 
 .search-container {
