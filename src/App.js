@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { fetchFromApi, fetchMore } from './api';
-import { Bodies, Searchbar } from './components';
+import { Bodies, Navbar, Searchbar } from './components';
 import InfiniteScroll from 'react-infinite-scroll-component';
 
 function App() {
@@ -14,6 +14,7 @@ function App() {
 	}, [query]);
 	return (
 		<>
+			<Navbar />
 			<h1 className='page-title'>Bodies of our Solar system</h1>
 			<section className='container'>
 				<Searchbar query={query} setQuery={setQuery} />

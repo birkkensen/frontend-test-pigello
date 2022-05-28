@@ -1,3 +1,4 @@
-import Bodies from './Bodies';
+import Navbar from './Navbar';
 import Searchbar from './Searchbar';
-export { Bodies, Searchbar };
+import Bodies from './Bodies';
+export { Navbar, Searchbar, Bodies };
