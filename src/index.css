@@ -88,3 +88,20 @@ body {
 	text-transform: capitalize;
 	text-align: center;
 }
+
+.notFound-container {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.notFound {
+	font-size: 50px;
+	text-align: center;
+}
+
+.notFoundLink {
+	font-size: 32px;
+}
