@@ -30,6 +30,10 @@ body {
 	display: flex;
 	align-items: center;
 	height: 72px;
+	gap: 8px;
+}
+.navbar svg {
+	font-size: 32px;
 }
 
 .bodies-container {
@@ -45,11 +49,12 @@ body {
 }
 .search-container svg {
 	font-size: 24px;
+	margin-left: 8px;
 }
 .search-field {
 	width: 100%;
 	margin-left: 4px;
-	padding: 4px 0;
+	padding: 8px 0;
 	border: none;
 	background-color: transparent;
 }
@@ -59,12 +64,13 @@ body {
 .titles {
 	display: flex;
 	justify-content: space-between;
+	padding: 8px;
 }
 
 .titles h4 {
 	width: 33.3%;
 	padding: 8px;
-	text-align: center;
+	/* text-align: center; */
 }
 
 .bodies {
@@ -91,7 +97,7 @@ body {
 	width: 33.3%;
 	padding: 8px;
 	text-transform: capitalize;
-	text-align: center;
+	/* text-align: center; */
 }
 
 .notFound-container {
@@ -109,4 +115,15 @@ body {
 
 .notFoundLink {
 	font-size: 32px;
+}
+
+.footer {
+	display: flex;
+	padding: 16px;
+	gap: 16px;
+}
+.footer-links {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
 }
