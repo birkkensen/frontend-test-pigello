@@ -3,7 +3,7 @@ const DATA_ORDER = 'order=aroundPlanet,desc';
 let count = 20;
 const fetchFromApi = async (query) => {
 	const res = await fetch(
-		`${BASE_URL}/?${DATA_ORDER}&filter[]=isPlanet,eq,false&filter[]=id,sw,${query}&page=1,20`
+		`${BASE_URL}/?${DATA_ORDER}&filter[]=isPlanet,eq,false&filter[]=name,sw,${query}&page=1,20`
 	)
 		.then((data) => data.json())
 		.catch((err) => console.log(err));
