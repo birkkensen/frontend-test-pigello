@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400;8..144,600&display=swap');
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
+
 :root {
 	--main-color: #afabc6;
 	--table-background-color: #f2edd0;
@@ -19,6 +21,7 @@ body {
 	width: 80vw;
 	margin: auto;
 }
+
 @media screen and (max-width: 480px) {
 	.page-wrapper {
 		width: auto;
@@ -32,6 +35,7 @@ body {
 	height: 72px;
 	gap: 8px;
 }
+
 .navbar svg {
 	font-size: 32px;
 }
@@ -47,10 +51,12 @@ body {
 	border-bottom: 1px var(--main-color) solid;
 	padding: 8px;
 }
+
 .search-container svg {
 	font-size: 24px;
 	margin-left: 8px;
 }
+
 .search-field {
 	width: 100%;
 	margin-left: 4px;
@@ -58,9 +64,11 @@ body {
 	border: none;
 	background-color: transparent;
 }
+
 .search-field:focus {
 	outline: none;
 }
+
 .titles {
 	display: flex;
 	justify-content: space-between;
@@ -116,15 +124,18 @@ body {
 .notFoundLink {
 	font-size: 32px;
 }
+
 .top-to-btm {
 	position: relative;
 }
+
 .icon-position {
 	position: fixed;
 	bottom: 40px;
 	right: 40px;
 	z-index: 20;
 }
+
 .icon-style {
 	background-color: var(--font-color);
 	border-radius: 50%;
@@ -134,14 +145,17 @@ body {
 	cursor: pointer;
 	transition: all 0.2s ease-in-out;
 }
+
 .icon-style:hover {
 	opacity: 0.8;
 }
+
 .footer {
 	display: flex;
 	padding: 16px;
 	gap: 16px;
 }
+
 .footer-links {
 	display: flex;
 	flex-direction: column;

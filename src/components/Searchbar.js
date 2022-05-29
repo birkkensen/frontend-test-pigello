@@ -1,5 +1,5 @@
 import { BiSearch } from 'react-icons/bi';
-import { fetchFromApi } from '../api';
+import { fetchAllBodies } from '../api';
 const Searchbar = ({ query, setQuery, data, setData }) => {
 	// Why does setQuery give the input one keystroke delay?
 	// Why does it not filter on delete?
@@ -13,7 +13,9 @@ const Searchbar = ({ query, setQuery, data, setData }) => {
 			);
 			setData({ bodies: newData });
 		} else {
-			fetchFromApi().then(setData);
+			// TODO: Is there a better way? Most def
+			// setData(JSON.parse(sessionStorage.getItem('data')));
+			fetchAllBodies().then(setData);
 		}
 	};
 	return (
