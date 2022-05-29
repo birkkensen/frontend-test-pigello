@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { fetchFromApi, fetchMore } from '../api';
+import { inititalFetch, fetchMore } from '../api';
 import { Bodies, Searchbar } from '../components';
 import InfiniteScroll from 'react-infinite-scroll-component';
 const Home = () => {
@@ -8,13 +8,13 @@ const Home = () => {
 	});
 	const [query, setQuery] = useState('');
 	useEffect(() => {
-		fetchFromApi(query).then(setData);
-	}, [query]);
+		inititalFetch().then(setData);
+	}, []);
 
 	return (
 		<>
 			<section className='bodies-container'>
-				<Searchbar query={query} setQuery={setQuery} />
+				<Searchbar query={query} setQuery={setQuery} data={data} setData={setData} />
 				<div className='titles'>
 					<h4>Name</h4>
 					<h4>Around Planet</h4>
