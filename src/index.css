@@ -26,6 +26,12 @@ body {
 	}
 }
 
+.navbar {
+	display: flex;
+	align-items: center;
+	height: 72px;
+}
+
 .bodies-container {
 	border: 1px var(--border-color) solid;
 	border-radius: 16px;

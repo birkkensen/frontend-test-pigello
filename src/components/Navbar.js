@@ -1,5 +1,9 @@
 const Navbar = () => {
-	return <nav>Système Solaire</nav>;
+	return (
+		<nav className='navbar'>
+			<h1>Système Solaire</h1>
+		</nav>
+	);
 };
 
 export default Navbar;

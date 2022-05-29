@@ -11,7 +11,6 @@ const Home = () => {
 		fetchFromApi(query).then(setData);
 	}, [query]);
 
-	// TODO: Maybe make this return into a Bodies component??
 	return (
 		<>
 			<section className='bodies-container'>
